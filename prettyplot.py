@@ -21,7 +21,7 @@ def factor_scatter_matrix(df, factor, palette=None, size = (40,40)):
         df = df.drop(factor_name,axis=1) # remove from df, so it
         # doesn't get a row and col in the plot.
 
-    classes = list(set(factor))
+    classes = ['Dsim', 'Dsec', 'Dmel', 'Dyak', 'Dere', 'Dana','Dpse', 'Dper', 'Dwil', 'Dvir', 'Dmoj']#list(set(factor))
 
     if palette is None:
         palette = ['#e41a1c', '#377eb8', '#4eae4b',
